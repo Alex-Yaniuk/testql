@@ -69,6 +69,7 @@ jobs:
 #      uses: github/codeql-action/autobuild@v3
       run: |
          echo "Run, Build Application using script"
+         printenv JAVA_HOME
          chmod +x ./gradlew 
          ./gradlew assemble
 
